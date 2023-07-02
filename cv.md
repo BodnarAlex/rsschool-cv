@@ -30,5 +30,10 @@ function solution($str) {
   return empty($str) ? [] : str_split($str, 2);
 }
 ## Experience
+I worked as a backend PHP-programmer for Bitrix and Bitrix24.
 ## Education
-## English 
+Higher education of the University named after Kant, majoring in Business Informatics.
+In 2020, she took courses from the W3C on edX, called "Front-End Web Developer (FEWD) Professional Certificate"
+## Languages 
+English - B1.
+Serbian - A2.
