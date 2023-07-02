@@ -34,7 +34,7 @@ function solution($str) {
 ## Experience
 I worked as a backend PHP-programmer for Bitrix and Bitrix24.
 ## Education
-Higher education of the University named after Kant, majoring in Business Informatics.
+Higher education of the Immanuel Kant Baltic Federal University, majoring in Business Informatics.
 In 2020, she took courses from the W3C on edX, called "Front-End Web Developer (FEWD) Professional Certificate"
 ## Languages 
 * English - B1.
