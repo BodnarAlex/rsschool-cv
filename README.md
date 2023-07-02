@@ -1,1 +1,1 @@
-# rsschool-cv
+https://bodnaralex.github.io/rsschool-cv/cv
