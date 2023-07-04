@@ -22,6 +22,9 @@ body *{
     .top_menu ul li{
         list-style-type: none;
     }
+    .top_menu ul li a:hover{
+        color:darkblue;
+    }
     .top_menu ul li a{
         color: #000;
         text-decoration: none;
