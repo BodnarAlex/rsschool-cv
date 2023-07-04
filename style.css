@@ -18,6 +18,9 @@ body{
 main .content{
     display: flex;
 }
+.top_menu, footer, .content-left{
+    background-color: #9EC5ED;
+}
 
 @media only screen and (max-width: 800px){
     header .top_menu{
