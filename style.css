@@ -1,6 +1,4 @@
-body *{
-    border: 1px solid black;
-}
+
 body{
     margin: 0 auto;
     width: 100%;
@@ -28,18 +26,18 @@ main .content{
 }
 
 @media only screen and (min-width: 801px){
-    .top_menu ul{
+    .top_menu ul, .footer_nav ul{
         display: flex;
         flex-flow: row nowrap;
         justify-content:space-between;
     }
-    .top_menu ul li{
+    .top_menu ul li, .footer_nav ul li{
         list-style-type: none;
     }
     .top_menu ul li a:hover{
         color:darkblue;
     }
-    .top_menu ul li a{
+    .top_menu ul li a, .footer_nav ul li a{
         color: #000;
         text-decoration: none;
     }
