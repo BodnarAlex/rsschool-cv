@@ -1,6 +1,13 @@
 body *{
     border: 1px solid black;
 }
+body{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
  .section_name__img img{
     width: 225px;
     height: 225px;
