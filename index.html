@@ -57,6 +57,28 @@
         </section>
         <section id="section_codes">
             <h2>Codes</h2>
+            <div>
+                <div>
+                    <p>Exercise:</p>
+                    <p>Complete the solution so that it splits the string into pairs of two characters.
+                     If the string contains an odd number of characters then it should replace the missing second character of the final pair with an underscore ('_').
+                     </p>
+                </div>
+                <div>
+                    <p>Solution:</p>
+                    <code>
+                        <pre>
+                            function solution($str) {
+
+                                if((strlen($str) % 2) !== 0)
+                                  $str .= "_";
+                                
+                                return empty($str) ? [] : str_split($str, 2);
+                              }
+                        </pre>
+                    </code>
+                </div>
+            </div>
         </section>
         <section id="section_expirience">
             <h2>Expirience</h2>
