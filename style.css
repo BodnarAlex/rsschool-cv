@@ -29,16 +29,24 @@ main .content{
 }
 
 @media only screen and (min-width: 801px){
+    .top_menu{
+        padding: 0 20px;
+    }
     .top_menu ul, .footer_nav ul{
+        padding: 0;
+        margin:0;
         display: flex;
         flex-flow: row nowrap;
-        justify-content:space-between;
+        justify-content:space-around;
     }
     .top_menu ul li, .footer_nav ul li{
         list-style-type: none;
+        padding: 12px 20px;
     }
-    .top_menu ul li a:hover{
-        color:darkblue;
+    .top_menu ul li:hover{
+        border-right: 1px solid #26480A;
+        border-left: 1px solid #26480A;
+        background-color: #5EA0E8;
     }
     .top_menu ul li a, .footer_nav ul li a{
         color: #000;
