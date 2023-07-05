@@ -17,16 +17,24 @@ body{
 }
 main .content{
     display: flex;
+    flex-flow: row nowrap;
 }
-.top_menu, footer, .content-left{
+.top_menu, footer, .content-left *{
     background-color: #9EC5ED;
 }
 .icon{
     width: 60px
 }
+.content-left{
+    min-width: 225px;
+    margin-right: 20px;
+}
 @media only screen and (max-width: 800px){
     header .top_menu{
         display: none;
+    }
+    main .content{
+        flex-flow: row wrap;
     }
 }
 
@@ -54,4 +62,5 @@ main .content{
         color: #000;
         text-decoration: none;
     }
+
 }
