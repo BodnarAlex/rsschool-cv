@@ -19,7 +19,7 @@ main .content{
     display: flex;
     flex-flow: row nowrap;
 }
-.top_menu, footer, .content-left *{
+.top_menu, footer, .content-left{
     background-color: #9EC5ED;
 }
 .icon{
@@ -47,10 +47,51 @@ h2{
 .top_menu{
     font-size: 25px;
 }
-.top_menu ul li a, .side_nav ul li a{
+.top_menu ul li a, .side_nav .contact__content a{
     color: #000;
     text-decoration: none;
 }
+.image_discord{
+    background-image: url(img/icon/discord.svg);
+}
+.image_github{
+    background-image: url(img/icon/github.svg);
+}
+.image.image_linkedin{
+    background-image: url(img/icon/linkedin.svg);
+    width: 17px;
+    height: 17px;
+    margin-left: 3px;
+}
+.image_telegram{
+    background-image: url(img/icon/telegram.svg);
+}
+.image_mail{
+    background-image: url(img/icon/email.svg);
+}
+.image_adress{
+    background-image: url(img/icon/place.svg);
+}
+.image_copy{
+    background-image: url(img/icon/copy.png);
+    margin-left: 10px;
+}
+.image{
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.side_nav li {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.side_nav ul{
+    padding-left: 0;
+ }
 @media only screen and (max-width: 800px){
     header .top_menu{
         display: none;
