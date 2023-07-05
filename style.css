@@ -19,20 +19,28 @@ main .content{
     display: flex;
     flex-flow: row nowrap;
 }
-.top_menu, footer, .content-left{
+.section_name__img{
+    min-width: 360px;
+    margin: -1px 0;
+    text-align: center;
+    padding: 20px 0;
+}
+.top_menu, footer, .content-left, .section_name__img{
     background-color: #9EC5ED;
 }
 .icon{
     width: 60px
 }
 .content-left{
-    min-width: 350px;
+    min-width: 360px;
     margin-right: 20px;
 }
-h1{
+.header_title{
     margin: 0 auto;
     vertical-align:middle;
     align-self: center;
+}
+h1{
     font-size: 65px;
     min-width: 400px;
     text-shadow: 3px -4px 5px #9EC5ED;
@@ -41,8 +49,15 @@ h1, h2, .top_menu{
     font-weight: 100;
     font-family: 'Carattere', cursive;
 }
+h1{
+    margin-bottom: 10px;
+}
 h2{
     font-size: 35px;
+}
+h3{
+    margin: 0;
+    text-align: right;
 }
 .top_menu{
     font-size: 25px;
@@ -119,6 +134,9 @@ h2{
     }
     h1{
         margin-left: 40px;
+    }
+    .presentation {
+        flex-flow: column-reverse wrap;
     }
 }
 
