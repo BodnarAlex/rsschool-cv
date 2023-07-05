@@ -7,8 +7,8 @@ body{
     margin: 0 auto;
 }
  .section_name__img img{
-    width: 225px;
-    height: 225px;
+    width: 310px;
+    height: 310px;
     border-radius: 50%;
 }
 .presentation{
@@ -62,7 +62,7 @@ h3{
 .top_menu{
     font-size: 25px;
 }
-.top_menu ul li a, .side_nav .contact__content a{
+.top_menu ul li a, .contact__content a{
     color: #000;
     text-decoration: none;
 }
@@ -106,9 +106,24 @@ h3{
     padding: 0;
     margin: 0 30px;
 }
-.side_nav li, .lang_nav li {
+.side_nav li, .lang_nav li{
     display: flex;
     flex-flow: row nowrap;
+}
+footer, .footer_github {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.image.footer_image{
+    width: 30px;
+    height: 30px;
+}
+.footer_rsschool, .footer_github{
+    align-self: center;
+}
+.contact__content.footer_content{
+    align-self: center;
 }
 .side_nav ul{
     padding-left: 0;
