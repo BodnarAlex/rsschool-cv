@@ -26,7 +26,7 @@ main .content{
     width: 60px
 }
 .content-left{
-    min-width: 225px;
+    min-width: 350px;
     margin-right: 20px;
 }
 h1{
@@ -47,6 +47,10 @@ h2{
 .top_menu{
     font-size: 25px;
 }
+.top_menu ul li a, .side_nav ul li a{
+    color: #000;
+    text-decoration: none;
+}
 @media only screen and (max-width: 800px){
     header .top_menu{
         display: none;
@@ -63,14 +67,14 @@ h2{
     .top_menu{
         padding: 0 20px;
     }
-    .top_menu ul, .footer_nav ul{
+    .top_menu ul{
         padding: 0;
         margin:0;
         display: flex;
         flex-flow: row nowrap;
         justify-content:space-around;
     }
-    .top_menu ul li, .footer_nav ul li{
+    .top_menu ul li, .side_nav ul li{
         list-style-type: none;
         padding: 12px 20px;
     }
@@ -79,9 +83,4 @@ h2{
         border-left: 1px solid #26480A;
         background-color: #5EA0E8;
     }
-    .top_menu ul li a, .footer_nav ul li a{
-        color: #000;
-        text-decoration: none;
-    }
-
 }
