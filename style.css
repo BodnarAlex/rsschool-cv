@@ -29,12 +29,33 @@ main .content{
     min-width: 225px;
     margin-right: 20px;
 }
+h1{
+    margin: 0 auto;
+    vertical-align:middle;
+    align-self: center;
+    font-size: 65px;
+    min-width: 400px;
+    text-shadow: 3px -4px 5px #9EC5ED;
+}
+h1, h2, .top_menu{
+    font-weight: 100;
+    font-family: 'Carattere', cursive;
+}
+h2{
+    font-size: 35px;
+}
+.top_menu{
+    font-size: 25px;
+}
 @media only screen and (max-width: 800px){
     header .top_menu{
         display: none;
     }
     main .content{
         flex-flow: row wrap;
+    }
+    h1{
+        margin-left: 40px;
     }
 }
 
