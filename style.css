@@ -5,19 +5,24 @@ body{
     max-width: 1000px;
     margin: 0 auto;
 }
+ul li {
+    list-style-type: none;
+}
  .section_name__img img{
     width: 310px;
     height: 310px;
     border-radius: 50%;
     object-fit: cover;	
 }
-.presentation{
+main .content, .presentation, .project_content_using ul{
     display: flex;
     flex-flow: row nowrap;
 }
-main .content{
-    display: flex;
-    flex-flow: row nowrap;
+.project_content_using ul{
+    justify-content: end;
+}
+.project_content_desc{
+    min-height: 90px;
 }
 .section_name__img{
     min-width: 360px;
@@ -96,6 +101,39 @@ h3{
 .image_lang{
     background-image: url(img/icon/lang.svg);
 }
+.project_image{
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 150px;
+    background-blend-mode: overlay;
+}
+.project :hover{
+    background-color: rgba(158, 197, 237, 0.5);
+}
+.project {
+    background-color: none;
+}
+.image_graph {
+    background-image: url(img/Снимок.png);
+}
+.projects{
+    display: flex;
+    flex-flow: row wrap;
+}
+.project{
+    flex: 2;
+}
+.project_content{
+    font-size: 25px;
+    color: #000;
+    font-weight: 500;
+    max-width: 250px;
+}
+a{
+    text-decoration: none;
+}
 .image{
     background-position: center left;
     background-repeat: no-repeat;
@@ -138,6 +176,11 @@ footer, .footer_github {
     flex-flow: row nowrap;
     justify-content: space-between;
  }
+ .project_content_using ul img{
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+ }
 
  /* for load */
  .skills_percent ul {
@@ -172,7 +215,6 @@ footer, .footer_github {
         justify-content:space-around;
     }
     .top_menu ul li, .side_nav ul li, .lang_nav ul li{
-        list-style-type: none;
         padding: 12px 0;
     }
     .top_menu ul li:hover{
