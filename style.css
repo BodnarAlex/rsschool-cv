@@ -1,4 +1,3 @@
-
 body{
     margin: 0 auto;
     width: 100%;
@@ -33,7 +32,9 @@ main .content{
 }
 .content-left{
     min-width: 360px;
-    margin-right: 20px;
+}
+.content-right{
+    margin: 0 20px;
 }
 .header_title{
     margin: 0 auto;

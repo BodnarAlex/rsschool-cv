@@ -198,14 +198,13 @@
                                 <p>Solution:</p>
                                 <code>
                                     <pre>
-                                        function solution($str) {
-            
-                                            if((strlen($str) % 2) !== 0)
-                                              $str .= "_";
-                                            
-                                            return empty($str) ? [] : str_split($str, 2);
-                                          }
-                                    </pre>
+function solution($str) {
+    if((strlen($str) % 2) !== 0)
+        $str .= "_";
+
+    return empty($str) ? [] : str_split($str, 2);
+}
+                                        </pre>
                                 </code>
                             </div>
                         </div>
