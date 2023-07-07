@@ -188,6 +188,15 @@ footer, .footer_github {
     flex-flow: row nowrap;
     justify-content: space-between;
  }
+.list_educate{
+    border-left: 1px solid #26480A;
+}
+.item_educate{
+    border-left: 1px solid #355818;
+    margin: 0 20px 10px;
+    padding: 10px;
+}
+ 
 @media only screen and (max-width: 800px){
     header .top_menu{
         display: none;
