@@ -38,6 +38,8 @@ main .content, .presentation, .project_content_using ul{
 }
 .content-left{
     min-width: 360px;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 .content-right{
     margin: 0 20px;
@@ -134,12 +136,14 @@ h3{
 }
 .project{
     flex: 2;
+    margin-bottom: 10px;
 }
 .project_content{
     font-size: 25px;
     color: #000;
     font-weight: 500;
     max-width: 250px;
+    margin: 0 auto;
 }
 a{
     text-decoration: none;
