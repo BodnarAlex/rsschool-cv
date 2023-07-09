@@ -215,6 +215,13 @@ footer, .footer_github {
 }
  
 @media only screen and (max-width: 800px){
+    body, main {
+        padding: 0;
+        width: 100%;
+    }
+    section{
+        padding: 0 20px;
+    }
     header .top_menu{
         display: none;
     }
@@ -226,6 +233,23 @@ footer, .footer_github {
     }
     .presentation {
         flex-flow: column-reverse wrap;
+    }
+    .content-right{
+        margin-right: 20px;
+    }
+    .content-left, header, .section_name__img{
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        border: none !important;
+    }
+    .project{
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .section_name__img{
+        margin-bottom: -1px;
     }
 }
 
