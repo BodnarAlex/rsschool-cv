@@ -108,6 +108,7 @@ h3{
     width: 250px;
     height: 150px;
     background-blend-mode: overlay;
+    margin: 0 auto;
 }
 .project :hover{
     background-color: rgba(158, 197, 237, 0.5);
@@ -116,11 +117,20 @@ h3{
     background-color: none;
 }
 .image_graph {
-    background-image: url(img/Снимок.png);
+    background-image: url(img/project1.png);
+}
+.image_buttons{
+    background-image: url(img/project1.png);
+}
+.blue{
+    background-color: rgba(158, 197, 237, 0.5);
+    padding: 10px 5px;
+    margin: 0 10px;
 }
 .projects{
     display: flex;
     flex-flow: row wrap;
+    margin-bottom: 20px;
 }
 .project{
     flex: 2;
@@ -189,10 +199,13 @@ footer, .footer_github {
     justify-content: space-between;
  }
 .list_educate{
-    border-left: 1px solid #26480A;
+    border-left: 3px solid rgb(158, 197, 237);
+    margin-bottom: 30px;
 }
 .item_educate{
-    border-left: 1px solid #355818;
+    border-left: 2px solid rgba(158, 197, 237, 0.8);
+    border-bottom: 1px solid rgba(158, 197, 237, 0.8);
+    border-top: 1px solid rgba(158, 197, 237, 0.8);
     margin: 0 20px 10px;
     padding: 10px;
 }
