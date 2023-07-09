@@ -15,10 +15,12 @@
         <nav class="top_menu">
             <ul>
                 <li><a href="#section_about">About me</a></li>
-                <li><a href="#section_codes">Codes</a></li>
-                <li><a href="#section_expirience">Expirience</a></li>
-                <li><a href="#section_educate">Education</a></li>
                 <li><a href="#section_contacts">Contacts</a></li>
+                <li><a href="#section_skills">Skills</a></li>
+                <li><a href="#section_codes">Codes</a></li>
+                <li><a href="#section_expirience">Projects</a></li>
+                <li><a href="#section_educate">Education</a></li>
+                
               </ul>
         </nav>
         <div class="presentation">
@@ -45,35 +47,30 @@
                                     <div class="contact__content">
                                         Alexsandra Bodnar (@bodnaralex)
                                     </div>
-                                    <div class="image image_copy"></div>
                                 </li>
                                 <li>
                                     <div class="image image_github"></div>
                                     <div class="contact__content">
                                         <a href="https://github.com/BodnarAlex">BodnarAlex</a>
                                     </div>
-                                    <div class="image image_copy"></div>
                                 </li>
                                 <li>
                                     <div class="image image_linkedin"></div>
                                     <div class="contact__content">
                                         <a href="https://linkedin.com/in/aleksandra-bodnar/">aleksandra-bodnar</a>
                                     </div>
-                                    <div class="image image_copy"></div>
                                 </li>
                                 <li>
                                     <div class="image image_telegram"></div>
                                     <div class="contact__content">
                                         <a href="https://t.me/@BodnarAleksandra">@BodnarAleksandra</a>
                                     </div>
-                                    <div class="image image_copy"></div>
                                 </li>
                                 <li>
                                     <div class="image image_mail"></div>
                                     <div class="contact__content">
                                         <a href="alexsandra.bodnar@mail.ru">alexsandra.bodnar@mail.ru</a>
                                     </div>
-                                    <div class="image image_copy"></div>
                                 </li>
                                 <li>
                                     <div class="image image_adress"></div>
@@ -196,24 +193,26 @@
                             </div>
                             <div>
                                 <p>Solution:</p>
-                                <code>
-                                    <pre>
-function solution($str) {
-    if((strlen($str) % 2) !== 0)
-        $str .= "_";
+                                <pre>
+                                    <code>
+                                        <div class="blue">
+        function solution($str) {
+            if((strlen($str) % 2) !== 0)
+                $str .= "_";
 
-    return empty($str) ? [] : str_split($str, 2);
-}
-                                        </pre>
-                                </code>
+            return empty($str) ? [] : str_split($str, 2);
+        }
+                                        </div>
+                                    </code>
+                                </pre>
                             </div>
                         </div>
                     </section>
                     <section id="section_expirience">
                         <h2>Projects</h2>
                         <div class="projects">
-                            <div class="project">
-                                <a href="https://bodnaralex.github.io/graph/">
+                            <div class="project blue">
+                                <a href="https://github.com/BodnarAlex/graph/">
                                     <div class="project_image image_graph"></div>
                                 </a>
                                 <div class="project_content">
@@ -233,9 +232,9 @@ function solution($str) {
                                     </div>
                                 </div>
                             </div>
-                            <div class="project">
-                                <a href="https://bodnaralex.github.io/graph/">
-                                    <div class="project_image image_graph"></div>
+                            <div class="project blue">
+                                <a href="https://github.com/BodnarAlex/buttons">
+                                    <div class="project_image image_buttons"></div>
                                 </a>
                                 <div class="project_content">
                                     <div class="project_content_name">

@@ -38,6 +38,8 @@ main .content, .presentation, .project_content_using ul{
 }
 .content-left{
     min-width: 360px;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 .content-right{
     margin: 0 20px;
@@ -108,6 +110,7 @@ h3{
     width: 250px;
     height: 150px;
     background-blend-mode: overlay;
+    margin: 0 auto;
 }
 .project :hover{
     background-color: rgba(158, 197, 237, 0.5);
@@ -116,20 +119,31 @@ h3{
     background-color: none;
 }
 .image_graph {
-    background-image: url(img/Снимок.png);
+    background-image: url(img/project2.png);
+}
+.image_buttons{
+    background-image: url(img/project1.png);
+}
+.blue{
+    background-color: rgba(158, 197, 237, 0.5);
+    padding: 10px 5px;
+    margin: 0 10px;
 }
 .projects{
     display: flex;
     flex-flow: row wrap;
+    margin-bottom: 20px;
 }
 .project{
     flex: 2;
+    margin-bottom: 10px;
 }
 .project_content{
     font-size: 25px;
     color: #000;
     font-weight: 500;
     max-width: 250px;
+    margin: 0 auto;
 }
 a{
     text-decoration: none;
@@ -189,15 +203,24 @@ footer, .footer_github {
     justify-content: space-between;
  }
 .list_educate{
-    border-left: 1px solid #26480A;
+    border-left: 3px solid rgb(158, 197, 237);
+    margin-bottom: 30px;
 }
 .item_educate{
-    border-left: 1px solid #355818;
+    border-left: 2px solid rgba(158, 197, 237, 0.8);
+    border-bottom: 1px solid rgba(158, 197, 237, 0.8);
+    border-top: 1px solid rgba(158, 197, 237, 0.8);
     margin: 0 20px 10px;
     padding: 10px;
 }
- 
 @media only screen and (max-width: 800px){
+    body, main {
+        padding: 0;
+        width: 100%;
+    }
+    section{
+        padding: 0 20px;
+    }
     header .top_menu{
         display: none;
     }
@@ -210,8 +233,24 @@ footer, .footer_github {
     .presentation {
         flex-flow: column-reverse wrap;
     }
+    .content-right{
+        margin-right: 20px;
+    }
+    .content-left, header, .section_name__img{
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        border: none !important;
+    }
+    .project{
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .section_name__img{
+        margin-bottom: -1px;
+    }
 }
-
 @media only screen and (min-width: 801px){
     .top_menu{
         padding: 0 20px;
