@@ -1,0 +1,234 @@
+body{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+ul li {
+    list-style-type: none;
+}
+ .section_name__img img{
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    object-fit: cover;	
+}
+main .content, .presentation, .project_content_using ul{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.project_content_using ul{
+    justify-content: end;
+}
+.project_content_desc{
+    min-height: 90px;
+}
+.section_name__img{
+    min-width: 360px;
+    margin: -1px 0;
+    text-align: center;
+    padding: 20px 0;
+}
+.top_menu, footer, .content-left, .section_name__img{
+    background-color: #9EC5ED;
+}
+.icon{
+    width: 60px
+}
+.content-left{
+    min-width: 360px;
+}
+.content-right{
+    margin: 0 20px;
+}
+.header_title{
+    margin: 0 auto;
+    vertical-align:middle;
+    align-self: center;
+}
+h1{
+    font-size: 65px;
+    min-width: 400px;
+    text-shadow: 3px -4px 5px #9EC5ED;
+}
+h1, h2, .top_menu{
+    font-weight: 100;
+    font-family: 'Carattere', cursive;
+}
+h1{
+    margin-bottom: 10px;
+}
+h2{
+    font-size: 35px;
+}
+h3{
+    margin: 0;
+    text-align: right;
+}
+.top_menu{
+    font-size: 25px;
+}
+.top_menu ul li a, .contact__content a{
+    color: #000;
+    text-decoration: none;
+}
+.image_discord{
+    background-image: url(img/icon/discord.svg);
+}
+.image_github{
+    background-image: url(img/icon/github.svg);
+}
+.image.image_linkedin{
+    background-image: url(img/icon/linkedin.svg);
+    width: 17px;
+    height: 17px;
+    margin-left: 3px;
+}
+.image_telegram{
+    background-image: url(img/icon/telegram.svg);
+}
+.image_mail{
+    background-image: url(img/icon/email.svg);
+}
+.image_adress{
+    background-image: url(img/icon/place.svg);
+}
+.image_copy{
+    background-image: url(img/icon/copy.png);
+    margin-left: 10px;
+}
+.image_lang{
+    background-image: url(img/icon/lang.svg);
+}
+.project_image{
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 150px;
+    background-blend-mode: overlay;
+}
+.project :hover{
+    background-color: rgba(158, 197, 237, 0.5);
+}
+.project {
+    background-color: none;
+}
+.image_graph {
+    background-image: url(img/Снимок.png);
+}
+.projects{
+    display: flex;
+    flex-flow: row wrap;
+}
+.project{
+    flex: 2;
+}
+.project_content{
+    font-size: 25px;
+    color: #000;
+    font-weight: 500;
+    max-width: 250px;
+}
+a{
+    text-decoration: none;
+}
+.image{
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.side_nav ul, .skills_nav {
+    padding: 0;
+    margin: 0 30px;
+}
+.side_nav li, .lang_nav li{
+    display: flex;
+    flex-flow: row nowrap;
+}
+header, main{
+    border-right: 2px solid #9EC5ED;
+}
+footer, .footer_github {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.image.footer_image{
+    width: 30px;
+    height: 30px;
+}
+.footer_rsschool, .footer_github{
+    align-self: center;
+}
+.contact__content.footer_content{
+    align-self: center;
+}
+.side_nav ul{
+    padding-left: 0;
+ }
+ .skills_nav li{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+ }
+ .project_content_using ul img{
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+ }
+
+ /* for load */
+ .skills_percent ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+ }
+.list_educate{
+    border-left: 1px solid #26480A;
+}
+.item_educate{
+    border-left: 1px solid #355818;
+    margin: 0 20px 10px;
+    padding: 10px;
+}
+ 
+@media only screen and (max-width: 800px){
+    header .top_menu{
+        display: none;
+    }
+    main .content{
+        flex-flow: row wrap;
+    }
+    h1{
+        margin-left: 40px;
+    }
+    .presentation {
+        flex-flow: column-reverse wrap;
+    }
+}
+
+@media only screen and (min-width: 801px){
+    .top_menu{
+        padding: 0 20px;
+    }
+    .top_menu ul{
+        padding: 0;
+        margin:0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content:space-around;
+    }
+    .top_menu ul li, .side_nav ul li, .lang_nav ul li{
+        padding: 12px 0;
+    }
+    .top_menu ul li:hover{
+        border-right: 1px solid #26480A;
+        border-left: 1px solid #26480A;
+        background-color: #5EA0E8;
+    }
+}
