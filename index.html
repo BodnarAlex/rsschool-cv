@@ -187,9 +187,11 @@
                         <div>
                             <div>
                                 <p>Exercise:</p>
-                                <p>Complete the solution so that it splits the string into pairs of two characters.
-                                 If the string contains an odd number of characters then it should replace the missing second character of the final pair with an underscore ('_').
+                                <p>Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.
                                  </p>
+                            </div>
+                            <div>
+                                <p><a href="https://www.codewars.com/kata/520b9d2ad5c005041100000f">Link to Codewars</a></p>
                             </div>
                             <div>
                                 <p>Solution:</p>
@@ -197,12 +199,11 @@
                                 <pre>
                                     <code>
                                         
-        function solution($str) {
-            if((strlen($str) % 2) !== 0)
-                $str .= "_";
-
-            return empty($str) ? [] : str_split($str, 2);
-        }
+            function pigIt(str){
+                let res = str.split(' ');
+                res = res.map((x) => (!'.!?'.includes(x)) ? x.slice(1)+x.slice(0,1)+'ay': x);
+                return res.join(' ');
+            }
                                         
                                     </code>
                                 </pre>
