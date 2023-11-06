@@ -30,7 +30,7 @@ main .content, .presentation, .project_content_using ul{
     text-align: center;
     padding: 20px 0;
 }
-.top_menu, footer, .content-left, .section_name__img{
+footer, .content-left, .section_name__img{
     background-color: #9EC5ED;
 }
 .icon{
@@ -54,7 +54,7 @@ h1{
     min-width: 400px;
     text-shadow: 3px -4px 5px #9EC5ED;
 }
-h1, h2, .top_menu{
+h1, h2{
     font-weight: 100;
     font-family: 'Carattere', cursive;
 }
@@ -68,10 +68,7 @@ h3{
     margin: 0;
     text-align: right;
 }
-.top_menu{
-    font-size: 25px;
-}
-.top_menu ul li a, .contact__content a{
+ .contact__content a{
     color: #000;
     text-decoration: none;
 }
@@ -164,9 +161,6 @@ a{
     display: flex;
     flex-flow: row nowrap;
 }
-header, main{
-    border-right: 2px solid #9EC5ED;
-}
 footer, .footer_github {
     display: flex;
     flex-flow: row nowrap;
@@ -221,9 +215,6 @@ footer, .footer_github {
     section{
         padding: 0 20px;
     }
-    header .top_menu{
-        display: none;
-    }
     main .content{
         flex-flow: row wrap;
     }
@@ -249,25 +240,5 @@ footer, .footer_github {
     }
     .section_name__img{
         margin-bottom: -1px;
-    }
-}
-@media only screen and (min-width: 801px){
-    .top_menu{
-        padding: 0 20px;
-    }
-    .top_menu ul{
-        padding: 0;
-        margin:0;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content:space-around;
-    }
-    .top_menu ul li, .side_nav ul li, .lang_nav ul li{
-        padding: 12px 0;
-    }
-    .top_menu ul li:hover{
-        border-right: 1px solid #26480A;
-        border-left: 1px solid #26480A;
-        background-color: #5EA0E8;
     }
 }
