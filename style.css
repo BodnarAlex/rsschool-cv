@@ -12,7 +12,7 @@ ul li {
     width: 310px;
     height: 310px;
     border-radius: 50%;
-    object-fit: cover;	
+    object-fit: cover;
 }
 main .content, .presentation, .project_content_using ul{
     display: flex;
@@ -30,8 +30,11 @@ main .content, .presentation, .project_content_using ul{
     text-align: center;
     padding: 20px 0;
 }
-footer, .content-left, .section_name__img{
+footer, .content-left{
     background-color: #9EC5ED;
+}
+header, main{
+    border-top: 10px solid #9EC5ED;
 }
 .icon{
     width: 60px
@@ -77,6 +80,7 @@ h3{
 }
 .image_github{
     background-image: url(img/icon/github.svg);
+
 }
 .image.image_linkedin{
     background-image: url(img/icon/linkedin.svg);
